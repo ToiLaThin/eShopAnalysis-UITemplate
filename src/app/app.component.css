@@ -1,0 +1,9 @@
+button {
+    &.btn-scss {
+        color: green;
+        background-color: red;
+    }
+}
+.custom-text {
+    @apply font-bold text-3xl underline;
+}
