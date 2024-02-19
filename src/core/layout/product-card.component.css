@@ -1,0 +1,30 @@
+:host {
+    word-spacing: -2;
+    letter-spacing: -.5;
+}
+
+.start-container::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+/* phai la inline-block clearfix moi hoat dong */
+.star-container .star {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    margin-right: 5px;
+}
+.star-container .star::before {
+    content: '\2605';
+    float: left;
+    color: #f1c40f;
+    font-size: 1.5rem;
+
+}
+
+.fluid-img {
+    max-width: 100%;
+    height: auto;
+}
