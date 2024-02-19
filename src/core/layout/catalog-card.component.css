@@ -1,0 +1,17 @@
+.catalog-card {
+    width: fit-content;
+    background-color: #fff;
+    height: 176px;
+}
+.fluid-img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+
+    transition: all .5s ease;
+    transform: scale(1);
+}
+
+body {
+    background-color: bisque;
+}
