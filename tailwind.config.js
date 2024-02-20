@@ -73,7 +73,12 @@ module.exports = {
                 5: '1.25rem', // 20px
                 6: '1.5rem', // 24px
                 128: '32rem',
-                144: '36rem'
+                144: '36rem',                
+                18: '4.5rem', // 72px,
+                20: '5rem', // 80px
+                22: '5.5rem', // 88px
+                24: '6rem', // 96px
+                
             },
             borderRadius: {
                 '4xl': '2rem'
@@ -84,6 +89,8 @@ module.exports = {
                 base: ['1rem', { lineHeight: '1.5rem' }], // 16px
                 lg: ['1.125rem', { lineHeight: '1.75rem' }], // 18px
                 xl: ['1.25rem', { lineHeight: '1.75rem' }], // 20px
+                '2xl': ['1.5rem', { lineHeight: '2rem' }], // 24px
+                '3xl': ['2.5rem', { lineHeight: '2.25rem' }], // 30px
             }
         }
     },
