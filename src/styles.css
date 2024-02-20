@@ -44,4 +44,24 @@ body {
     .border-b-gray-50-solid-1px {
         @apply border-b border-gray-50 border-solid;
     }
+
+    .text-heading {
+        @apply font-medium text-xl tracking-wide;
+    }
+
+    .text-subheading { @apply lg:text-base font-light text-gray-500 sm:text-sm;}
+
+    .btn-primary-uppercase {
+        @apply py-3 px-5 text-white rounded bg-primary font-medium uppercase tracking-wide;
+    }
+
+    .btn-primary {
+        @apply py-3 px-5 text-white rounded bg-primary font-medium tracking-wide;
+    }
+
+    .clear-fix {
+        display: table;
+        clear: both;
+        content: "";
+    }
 }
