@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
-import { HeaderComponent } from './layout/header.component';
+import { HeaderTopbarComponent } from './layout/header/header-topbar.component';
 import { FooterComponent } from './layout/footer.component';
 import { CatalogCardComponent } from './layout/catalog-card.component';
 import { ProductCardComponent } from './layout/product-card.component';
+import { HeaderBannerComponent } from './layout/header/header-banner.component';
 
 @NgModule({
-    declarations: [HeaderComponent, FooterComponent, CatalogCardComponent, ProductCardComponent],
+    declarations: [HeaderTopbarComponent, HeaderBannerComponent, FooterComponent, CatalogCardComponent, ProductCardComponent],
     imports: [],
     providers: [],
-    exports: [HeaderComponent, FooterComponent, CatalogCardComponent, ProductCardComponent]
+    exports: [HeaderTopbarComponent, HeaderBannerComponent, FooterComponent, CatalogCardComponent, ProductCardComponent]
 })
 export class CoreModule {}
