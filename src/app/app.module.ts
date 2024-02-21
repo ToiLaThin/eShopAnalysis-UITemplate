@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { CoreModule } from '../core/core.module';
+import { IndexModule } from '../index/index.module';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { CoreModule } from '../core/core.module';
         RouterModule.forRoot(appRoutes),
         BrowserModule,
         CommonModule,
-        CoreModule
+        CoreModule,
+        IndexModule
     ],
     providers: [
         // Services
