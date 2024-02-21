@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { CoreModule } from '../core/core.module';
 import { IndexModule } from '../index/index.module';
+import { AuthModule } from '../auth/auth.module';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { IndexModule } from '../index/index.module';
         BrowserModule,
         CommonModule,
         CoreModule,
-        IndexModule
+        IndexModule,
+        AuthModule
     ],
     providers: [
         // Services

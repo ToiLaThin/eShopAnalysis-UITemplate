@@ -67,4 +67,26 @@ body {
     .dropdown-arrow::after {
         content: "\25bc";
     }
+
+    .star-container {
+        &::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+
+        & .star {
+            display: inline-block;
+            width: 14px;
+            height: auto;
+            margin-right: 8px;
+
+            &::before {
+                content: '\2605';
+                float: left;
+                color: #f1c40f;
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
