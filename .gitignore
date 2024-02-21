@@ -2,6 +2,7 @@
 
 # Compiled output
 /dist
+#remove dist if you want to push the compiled files to the repository for deployment github page (move to a temp branch not to be merged or rebase first)
 /tmp
 /out-tsc
 /bazel-out

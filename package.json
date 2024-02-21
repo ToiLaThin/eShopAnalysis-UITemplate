@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy init": "ng build --output-path dist --base-href /eShopAnalysis-UITemplate/ && copy .\\dist\\browser\\* .\\dist\\ && rmdir /s /q .\\dist\\browser",
+    "deploy-gh-pages": "git add . && git commit -m 'deploy' && git subtree push --prefix dist origin gh-pages"
   },
   "private": true,
   "dependencies": {
