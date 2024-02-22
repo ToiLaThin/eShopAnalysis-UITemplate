@@ -48,7 +48,8 @@ body {
         @apply font-medium text-xl tracking-wide;
     }
 
-    .text-subheading { @apply lg:text-base font-light text-gray-500 sm:text-sm;}
+    /* .text-subheading { @apply lg:text-base font-light text-gray-500 sm:text-sm;} */
+    .text-subheading { @apply font-light text-gray-500 text-sm;}
 
     .btn-primary-uppercase {
         @apply py-2 px-5 text-white rounded bg-primary font-medium uppercase tracking-wide;
@@ -59,9 +60,11 @@ body {
     }
 
     .clear-fix {
-        display: table;
-        clear: both;
-        content: "";
+        &::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
     }
 
     .dropdown-arrow::after {
