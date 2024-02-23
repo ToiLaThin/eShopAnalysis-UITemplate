@@ -5,9 +5,32 @@
     }
 </style>
 <div class="border border-gray-200 border-solid">
-    <div class="overflow-hidden">
+    <div class="overflow-hidden relative group">
+        <!-- Style child base on parent state with group -->
         <img src="/assets/images/today-is-a-good-day-framed-poster.jpg" 
              class="fluid-img">
+        <div class="absolute top-4 left-2 z-10 ">
+            <p class="inline-block bg-[red] text-white text-sm px-2 py-[2px] rounded">- 8%</p>
+        </div>
+        <div class="absolute top-12 -left-12 z-10 group-hover:left-2 transition-all">
+            <p class="inline-block bg-[#4cbb6c] text-white text-sm px-2 py-[2px] rounded">New</p>
+        </div>
+        <div class="absolute -top-20 right-2 z-10 group-hover:top-4 transition-all">
+            <div class="flex flex-col gap-2">
+                <p class="border border-solid border-gray-50 rounded-full w-10 h-10 flex justify-center items-center">
+                    <i class="far fa-heart text-xl"></i>
+                </p>
+                <p class="border border-solid border-gray-50 rounded-full w-10 h-10 flex justify-center items-center">
+                    <i class="fas fa-expand text-xl"></i>
+                </p>
+                <p class="border border-solid border-gray-50 rounded-full w-10 h-10 flex justify-center items-center">
+                    <i class="fas fa-link text-xl"></i>
+                </p>
+                <p class="border border-solid border-gray-50 rounded-full w-10 h-10 flex justify-center items-center">
+                    <i class="far fa-heart text-xl"></i>
+                </p>
+            </div>
+        </div>
     </div>
     <div class="p-4">
         <p class="text-gray-400 text-sm">Pro Tech Gear</p>

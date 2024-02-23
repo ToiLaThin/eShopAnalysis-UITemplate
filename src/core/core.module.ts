@@ -4,13 +4,17 @@ import { FooterComponent } from './layout/footer.component';
 import { HeaderBannerComponent } from './layout/header-banner.component';
 import { IndexModule } from '../index/index.module';
 import { CatalogCardComponent } from './layout/catalog-card.component';
+import { CartQuickViewComponent } from './layer/cart-quickview.component';
+import { CatalogSideNavComponent } from './layer/catalog-sidenav.component';
 
 @NgModule({
     declarations: [
         HeaderTopbarComponent,
         HeaderBannerComponent,
         FooterComponent,    
-        CatalogCardComponent    
+        CatalogCardComponent,
+        CartQuickViewComponent,
+        CatalogSideNavComponent    
     ],
     imports: [
     ],
@@ -19,7 +23,9 @@ import { CatalogCardComponent } from './layout/catalog-card.component';
         HeaderTopbarComponent,
         HeaderBannerComponent,
         FooterComponent,      
-        CatalogCardComponent  
+        CatalogCardComponent,
+        CartQuickViewComponent,
+        CatalogSideNavComponent  
     ]
 })
 export class CoreModule {}
